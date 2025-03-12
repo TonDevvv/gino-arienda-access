@@ -1,0 +1,319 @@
+:root{
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --font: 'Poppins', sans-serif;
+    --font-weight: 400;
+    --font-style: normal;
+}
+
+body{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font);
+    font-weight: var(--font-weight);
+    font-style: var(--font-style);
+    overflow: auto; /* Allow scrolling */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+html::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in Chrome, Safari, Edge */
+}
+
+h1{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+h2{
+    font-size: 100px;
+    margin: 0px;
+}
+
+nav{
+    display: flex;
+    top: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    width: 95%;
+    height: auto;
+    margin-top: 25px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    z-index: 9999;
+    backdrop-filter: blur(50px);
+}
+
+
+ul{
+    list-style: none;
+    display: flex; 
+    gap: 75px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 7px 12px; /* Slightly wider padding for better clickability */
+    display: inline-block;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+a:hover {
+    background: rgba(255, 255, 255, 0.15); /* Softer hover effect */
+    transform: scale(1.05); /* Light scaling effect */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Soft shadow for depth */
+}
+
+.content-container{
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+}
+
+.tag-line{
+    width: 50%;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.tag-line span{
+    color: #008F5D;
+}
+
+.access-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+
+.img-logo{
+    height: auto;
+    width: 70%;
+    border-radius: 50%;
+    border: 5px solid black;
+    box-shadow: 0px 0px 30px rgba(68, 68, 68, 0.6);
+}
+
+.about-container{
+    padding-top: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 50px;
+    margin: 50px;
+}
+
+.about-content{
+    width: 50%;
+}
+
+.about-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+}
+
+.img{
+    width: 325px; /* Set a fixed width */
+    height: 225px; /* Set a fixed height */
+    min-width: 225px;
+    min-height: 225px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 9px;
+    box-shadow: 0px 0px 30px rgba(68, 68, 68, 0.6);
+    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.img:hover {
+   
+    transform: scale(1.05); /* Slightly enlarge the image */
+    box-shadow: 0px 0px 30px rgba(189, 189, 189, 0.6); /* Increase white glow */
+}
+
+
+.course-container{
+    margin-top: 50px;
+    height: 500px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-container h2{
+    font-size: 85px;
+    align-self: center;
+}
+
+
+.course-card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 50px;
+    margin: 25px;
+}
+
+.course {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: rgba(255, 255, 255, 0.1);
+    height: auto;
+    width: 30%;
+    padding: 25px;
+    border-radius: 9px;
+    box-shadow: 0px 0px 18px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+.course:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.2); /* Add a soft glow */
+}
+
+.course h3{
+    margin: 0px;
+    padding: 0px;
+    font-size: 40px;
+}
+
+.course a:hover{
+    width: 100px;
+}
+
+.course p{
+    font-size: 18px;
+}
+
+.course ul{
+    list-style: disc;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 18px;
+}
+
+footer{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 95%;
+    margin: 0 auto; /* Centers the footer */
+    background: rgba(32, 32, 32, 0.1);
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 95%;
+    gap: 100px;
+}
+
+.contact-info{
+    width: 60%;
+}
+
+.social-icons{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 200px;
+}
+
+.social-icons a {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.social-icons a:hover {
+    transform: scale(1.2); /* Enlarges the icon slightly */
+    background: transparent;
+}
+
+.faq-container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 0px 18px rgba(255, 255, 255, 0.1);
+}
+
+.faq-container h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.faq-question {
+    width: 100%;
+    background: transparent;
+    color: var(--text-color);
+    border: none;
+    text-align: left;
+    font-size: 20px;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: white;
+}
+
+.faq-question:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+.icon {
+    font-size: 22px;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .icon {
+    transform: rotate(45deg);
+}
+
+
+
+
+
+
